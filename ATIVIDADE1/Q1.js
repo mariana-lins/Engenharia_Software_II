@@ -1,10 +1,15 @@
-const prompt = require("prompt-sync")(); 
+const prompt = require("prompt-sync")();
 
-const nome = prompt("seu nome: ");
-const alturaCm = parseFloat(prompt("altura em cm: "));
-const peso = parseFloat(prompt("peso em kg: "));
+const nome = prompt("Seu nome: ");
+const alturaCm = parseFloat(prompt("Altura em cm: "));
+const peso = parseFloat(prompt("Peso em kg: "));
 
-const altura = alturaCm / 100; 
+if (alturaCm <= 0 || peso <= 0) {
+    console.log("Erro");
+    return;
+}
+
+const altura = alturaCm / 100;
 const imc = peso / (altura * altura);
 
 let classificacao = "";
