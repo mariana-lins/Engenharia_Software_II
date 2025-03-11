@@ -1,8 +1,8 @@
 const prompt = require("prompt-sync")(); 
 
-let num1 = parseFloat(prompt("primeiro número: "));
-let operacao = prompt("soma ou subtração? ").toLowerCase();
-let num2 = parseFloat(prompt("segundo número: "));
+const num1 = parseFloat(prompt("primeiro número: "));
+const operacao = prompt("soma ou subtração? ").toLowerCase();
+const num2 = parseFloat(prompt("segundo número: "));
 
 let resultado;
 
