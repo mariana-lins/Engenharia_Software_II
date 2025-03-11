@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")(); 
 
 let nome = prompt("seu nome: ");
-let alturaCm = prompt("altura em centímetros: ");
+let alturaCm = prompt("altura em cm: ");
 let peso = prompt("peso em kg: ");
 
 let altura = parseFloat(alturaCm) / 100; 
