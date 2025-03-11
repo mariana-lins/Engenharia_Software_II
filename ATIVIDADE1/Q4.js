@@ -7,15 +7,15 @@ const categoria = prompt("categoria (F - Funcionário, G - Gerente): ").toUpperC
 const salarioMinimo = Number(prompt("salário mínimo estadual: "));
 
 const valoresHora = {
-    "G": { "M": 0.04, "V": 0.04, "N": 0.04 },
-    "F": { "M": 0.01, "V": 0.01, "N": 0.02 }
+    "G": { "M": 0.04, "V": 0.04, "N": 0.04 },
+    "F": { "M": 0.01, "V": 0.01, "N": 0.02 }
 };
 
 const valorHora = salarioMinimo * (valoresHora[categoria]?.[turno] || 0);
 const salarioInicial = horasTrabalhadas * valorHora;
 const auxilio = salarioInicial < 800 ? salarioInicial * 0.25 :
-                salarioInicial <= 1200 ? salarioInicial * 0.20 :
-                salarioInicial * 0.15;
+                salarioInicial <= 1200 ? salarioInicial * 0.20 :
+                salarioInicial * 0.15;
 
 const salarioFinal = salarioInicial + auxilio;
 
