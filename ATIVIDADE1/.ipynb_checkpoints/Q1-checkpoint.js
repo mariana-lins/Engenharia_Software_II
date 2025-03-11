@@ -1,10 +1,10 @@
 const prompt = require("prompt-sync")(); 
 
-let nome = prompt("seu nome: ");
-let alturaCm = prompt("altura em centímetros: ");
-let peso = prompt("peso em kg: ");
+let nome = prompt("Digite seu nome: ");
+let alturaCm = prompt("Digite sua altura em centímetros: ");
+let peso = prompt("Digite seu peso em kg: ");
 
-let altura = parseFloat(alturaCm) / 100; 
+let altura = parseFloat(alturaCm) / 100; // Converte cm para metros
 let pesoFloat = parseFloat(peso);
 let imc = pesoFloat / (altura * altura);
 

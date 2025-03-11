@@ -1,8 +1,8 @@
 const prompt = require("prompt-sync")(); 
 
-let num1 = parseFloat(prompt("Digite o primeiro número: "));
-let operacao = prompt("Digite a operação (soma ou subtração): ").toLowerCase();
-let num2 = parseFloat(prompt("Digite o segundo número: "));
+let num1 = parseFloat(prompt("primeiro número: "));
+let operacao = prompt("soma ou subtração? ").toLowerCase();
+let num2 = parseFloat(prompt("segundo número: "));
 
 let resultado;
 
@@ -11,8 +11,8 @@ if (operacao === 'soma') {
 } else if (operacao === 'subtração') {
     resultado = num1 - num2;
 } else {
-    console.log("Operação inválida!");
+    console.log("inválido!");
     return; 
 }
 
-console.log(`O resultado é: ${resultado}`);
+console.log(`o resultado é: ${resultado}`);
